@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+ 
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="checkbox.css">
+</head>
+<body class=" my-5">
+    
+    <div class="container align-center">
+        <div class="row justify-content-center">
+            <div class="col-md-5 py-5 px-5" id="main_part">
+                
+                <div class="col-md-12 text-center text-warning">
+                    <img src="img/Riaz.png" class="img-fluid" style="height:50px; width:50px;"alt="">
+                    <h3>Notes App</h3>
+                </div>
+                <div id="data">
+
+                </div>
+                <select id="sort">
+                    <option value="byAlphabetically">Sort by alphabetically</option>
+                    <option value="byEdited" >Sort by edit </option>
+                    <option value="byCreated">Sort by created </option>
+                </select>
+                <br><br>
+                <form id="ad">
+                    <input type="text" placeholder="Add new" name="inp">
+                </form><br>
+                <form id ="search">
+                    <input type="input" placeholder="Search here">
+                </form> 
+    
+                </form>
+                <br>
+    
+                <label class="lbl">
+                    Show  only incomplete:<input type="checkbox" id="show-completed" > 
+                </label>
+    
+            </div>
+       </div>
+       
+   </div>
+   <css-doodle>
+    @grid: 50x1 / 100%;
+
+@offset:right-1/2;
+@size: calc(75% / @I * @i);
+
+transform: rotate(calc(@i * 5deg));
+
+border-radius: 30%;
+border: 1px solid hsla(
+  calc(10 + 4 * @i), 70%, 68%, @r.8
+);
+  </css-doodle>
+   <script src="https://unpkg.com/css-doodle@0.25.1/css-doodle.min.js"></script>
+<script src="checkbox-function.js"></script>
+<script src="checkbox.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
